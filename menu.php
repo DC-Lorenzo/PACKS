@@ -35,6 +35,7 @@
               <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">¿Porqu&eacute; Comprar? <span class="caret"></span></a>
               <ul class="dropdown-menu">
                 <li><a href="#">Seguridad & Compromiso</a></li>
+                <li><a href="#">Condiciones Generales</a></li>
                 <li><a href="#">Ayuda al tenis</a></li>
                 <li><a href="#">Qui&eacute;nes Somos</a></li>
               </ul>
