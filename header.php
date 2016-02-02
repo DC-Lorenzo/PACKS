@@ -1,3 +1,20 @@
+<?php 
+include "classes/class_general_db.php";
+
+//check usuario
+if ($_GET['m']<>""){
+  $query = "SELECT member_name, email_address FROM elforodeltenis_members WHERE id_member = '$_GET[m]'";
+  $gt = new conexionBD();
+  $gt -> doQuery("$query");
+    while ( $gt -> setWhile()) {
+      $member_name    = $gt -> getDataSQL("member_name");
+      $email_address  = $gt -> getDataSQL("email_address");
+
+      $user_log = "SI";
+    }
+}
+if ($_GET['m']=="") { $user_log ="NO"; $member_name = "Visitante";}
+?>
 <!DOCTYPE html>
 <html lang="en">
   <head>

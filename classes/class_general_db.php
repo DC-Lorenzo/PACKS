@@ -5,8 +5,8 @@ class conexionBD{
    ////funcion Constructora
    function conexionBD (){
     $Maquina 	= "localhost"; 		///regularmente es localhost
-    $Usuario 	= "elforodeltenis"; 			//tu usuario
-	  $Pass 		= "marc2659"; 				 // tu pass
+    $Usuario 	= "root"; 			//tu usuario
+	  $Pass 		= ""; 				 // tu pass
     $BD 		= "elforodeltenis"; 		// la BD que vas a manipular
 	
    global $conectado;

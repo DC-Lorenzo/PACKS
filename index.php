@@ -3,10 +3,15 @@ include "header.php";
 include "menu.php";
 include "slider.php";
 ?>
-
+<div class="row space-up">
+  <div class="col-md-12 col-xs-12">
+    <span class="glyphicon glyphicon-home"></span> Inicio
+     <small> <div style="float:right;">Conectado como: <strong><?php echo $member_name;?></strong></div></small>
+  </div>
+</div>
 <div class="row space-up">
   <div class="col-md-6 col-xs-6">
-   <a href="#"><img src="img/box-raquetas.jpg" alt="raquetas de tenis" class="img-thumbnail"></a>
+   <a href="raquetas.php?m=<?php echo $_GET['m'];?>"><img src="img/box-raquetas.jpg" alt="raquetas de tenis" class="img-thumbnail"></a>
   </div>
   <div class="col-md-6 col-xs-6">
    <img src="img/box-zapatillas.jpg" alt="zapatillas de tenis" class="img-thumbnail">
