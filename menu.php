@@ -9,23 +9,45 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="index.php">
+          <a class="navbar-brand" href="index.php?m=<?php echo $_GET['m'];?>">
             <img alt="el foro del tenis - packs" src="img/elforodeltenis.png">
           </a>
         </div>
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
           <ul class="nav navbar-nav">
-            <li><a href="index.php">Raquetas <span class="sr-only">(current)</span></a></li>
-            <li><a href="#">Zapatillas</a></li>
-            <li><a href="#">Cordajes</a></li>
-            <li><a href="#">Textil</a></li>
-            <li><a href="#">Mochilas</a></li>
-            <li><a href="#">Accesorios</a></li>
+            <li><a href="index.php?m=<?php echo $_GET['m'];?>">Inicio</a></li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Categor&iacute;as <span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="#">Raquetas</a></li>
+                <li><a href="#">Zapatillas</a></li>
+                <li><a href="#">Cordajes</a></li>
+                <li><a href="#">Textil</a></li>
+                <li><a href="#">Mochilas</a></li>
+                <li><a href="#">Accesorios</a></li>
+              </ul>
+            </li>
+            <li><a href="http://www.elforodeltenis.com">Volver al foro</a></li>
           </ul>
           <ul class="nav navbar-nav navbar-right">
-            <li><a href="#">¿Porqu&eacute; Comprar?</a></li>
-            <li><a href="#">Cont&aacute;ctanos</a></li>                  
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">¿Porqu&eacute; Comprar? <span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="#">Seguridad & Compromiso</a></li>
+                <li><a href="#">Ayuda al tenis</a></li>
+                <li><a href="#">Qui&eacute;nes Somos</a></li>
+              </ul>
+            </li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Cont&aacute;ctanos <span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="#">Colaboraciones con tiendas</a></li>
+                <li><a href="#">Opciones patrocinio jugadores</a></li>
+                <li><a href="#">Opciones patrocinio Club</a></li>
+                <li><a href="#">Quiero vender aqu&iacute;</a></li>
+              </ul>
+            </li>
           </ul>
         </div><!-- /.navbar-collapse -->
       </div>

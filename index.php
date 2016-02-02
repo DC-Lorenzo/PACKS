@@ -6,7 +6,7 @@ include "slider.php";
 
 <div class="row space-up">
   <div class="col-md-6 col-xs-6">
-   <img src="img/box-raquetas.jpg" alt="raquetas de tenis" class="img-thumbnail">
+   <a href="#"><img src="img/box-raquetas.jpg" alt="raquetas de tenis" class="img-thumbnail"></a>
   </div>
   <div class="col-md-6 col-xs-6">
    <img src="img/box-zapatillas.jpg" alt="zapatillas de tenis" class="img-thumbnail">
