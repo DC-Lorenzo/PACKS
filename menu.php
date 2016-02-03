@@ -1,8 +1,15 @@
 <div class="row space-up">
   <div class="col-md-4">
-                <a href="index.php?m=<?php echo $_GET['m'];?>">
-            <img alt="el foro del tenis - packs" src="img/elforodeltenis.png" width="78%">
-          </a>
+      <a href="index.php?m=<?php echo $_GET['m'];?>">
+        <img alt="el foro del tenis - packs" src="img/elforodeltenis.png" width="78%">
+      </a>
+  </div>
+  <div class="col-md-5"></div>
+  <div class="col-md-3">
+      <div style="float:right">
+        <h2><span class="glyphicon glyphicon-shopping-cart"></span> Carro</h2>
+        [ver / pagar / hacer pedido]
+      </div>
   </div>
 </div>
 <div class="row space-up">

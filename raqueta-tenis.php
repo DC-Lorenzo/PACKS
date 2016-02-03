@@ -56,6 +56,7 @@ include "menu.php";
 		    	<?php if ($user_log=="NO"){ ?>
 		    	<div class="alert alert-danger"><strong>Para obtener el mejor precio de compra, identifícate en el foro.</strong></div>
 		    	<?php } ?>
+		    <form method="get" class="form-inline">	
 		    <table class="table table-condensed table-bordered table-striped">
 		      <tbody>
 		      	<tr>
@@ -80,7 +81,15 @@ include "menu.php";
 		        </tr>
 		        <tr>
 		          <td>Grips:</td>
-		          <td>L1, L2, L3</td>
+		          <td>
+					<select name="talla" class="form-control">
+		        		<option selected="selected">Selecciona Grip</option>
+		        		<option value="L1">L1</option>
+		        		<option value="L2">L2</option>
+		        		<option value="L3">L3</option>
+		      		</select>					
+		          	<i><small>(L1, L2, L3)</small></i>
+		          </td>
 		        </tr>
 		        <tr>
 		        	<td>Funda:</td>
@@ -104,31 +113,31 @@ include "menu.php";
 		        		 </span>
 		        	</td>
 		        </tr>
+		        <?php if ($user_log=="SI"){ ?>
+		        <tr>
+		        	<td>Camiseta Regalo:</td>
+		        	<td>
+		        		<select name="talla" class="form-control">
+					        <option selected="selected">Selecciona Talla</option>
+					        <option value="S">S</option>
+					        <option value="M">M</option>
+					        <option value="L">L</option>
+					        <option value="XL">XL</option>
+					    </select>
+		        	</td>
+		        </tr>
+		      <?php } ?>
 		      </tbody>
 		    </table>
+		    </form>
 		    <div class="row">
 		      <div class="col-md-4 col-xs-6">
-		      <select name="talla" class="form-control">
-		        <option selected="selected">Seleccione Grip</option>
-		        <option value="L1">L1</option>
-		        <option value="L2">L2</option>
-		        <option value="L3">L3</option>
-		      </select>
-		      </div>
-		      <div class="col-md-4 col-xs-6">
 		      <?php if ($user_log=="SI"){ ?>
-		      <select name="talla" class="form-control">
-		        <option selected="selected">Seleccione Talla</option>
-		        <option value="S">S</option>
-		        <option value="M">M</option>
-		        <option value="L">L</option>
-		        <option value="XL">XL</option>
-		      </select>
+		        <button class="btn btn-warning" data-toggle="modal" data-target="#send2friend">Recomendar a un amigo</button>
 		      <?php } ?>
 		      </div>
-		      <div class="col-md-4 col-xs-6">
-		        &nbsp;
-		        <button class="btn btn-primary">Añadir a la compra</button>
+		      <div class="col-md-8 col-xs-6">
+		        <a href="carro.php?m=<?php $_GET['m'];?>&ca=raqueta&item=<?php echo $id_raqueta;?>" class="btn btn-primary" style="float:right;">Añadir a la compra</a>
 		      </div>
 		    </div>
 		    </div>
@@ -139,3 +148,23 @@ include "menu.php";
 <?php
 include "footer.php"
 ?>
+
+<!-- Modal -->
+<div class="modal fade" id="send2friend" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <img src="img/elforodeltenis.png">
+      </div>
+      <div class="modal-body">
+        <strong><?php echo $member_name;?></strong>, indícanos el la dirección de correo electrónico de tu amigo, y le enviaremos un email para que pueda ver y/o comprar esta raqueta.
+        <input type="text" name="email_friend" class="form-control space-up" placeholder="indica el email de tu amigo">
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
+        <button type="button" class="btn btn-primary">Enviar Email</button>
+      </div>
+    </div>
+  </div>
+</div>
