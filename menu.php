@@ -6,10 +6,17 @@
   </div>
   <div class="col-md-5"></div>
   <div class="col-md-3">
-      <div style="float:right">
-        <h2><span class="glyphicon glyphicon-shopping-cart"></span> Carro</h2>
-        [ver / pagar / hacer pedido]
-      </div>
+    <div id="carro">
+      <a href="carro.php?m=<?php echo $_GET['m'];?>">
+        <div style="float:right">
+          <span class="badge" style="float:right;">
+            <span class="glyphicon glyphicon-shopping-cart"></span> 
+            42 producto(s)
+          </span> 
+          <span style="float:right;">[ver / pagar / hacer pedido]</span>
+        </div>
+      </a>  
+    </div>
   </div>
 </div>
 <div class="row space-up">

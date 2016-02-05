@@ -99,6 +99,15 @@ include "menu.php";
 		        	<td>Cordaje:</td>
 		        	<td>SI, Est&aacute;ndar F&aacute;brica</td>
 		        </tr>
+		        	<td>Cantidad:</td>
+		        	<td>
+		        		<select name="cantidad" class="form-control">
+		        			<option value="1">1</option>
+		        			<option value="2">2</option>
+		        			<option value="3">3</option>
+		        			<option value="4">4</option>
+		        		</select>
+		        	</td>
 		        <tr>
 		        	<td>Tu Precio:</td>
 		        	<?php 
@@ -132,12 +141,17 @@ include "menu.php";
 		    </form>
 		    <div class="row">
 		      <div class="col-md-4 col-xs-6">
-		      <?php if ($user_log=="SI"){ ?>
+		    
 		        <button class="btn btn-warning" data-toggle="modal" data-target="#send2friend">Recomendar a un amigo</button>
-		      <?php } ?>
+		      
 		      </div>
-		      <div class="col-md-8 col-xs-6">
-		        <a href="carro.php?m=<?php $_GET['m'];?>&ca=raqueta&item=<?php echo $id_raqueta;?>" class="btn btn-primary" style="float:right;">Añadir a la compra</a>
+		      <div class="col-md-8 col-xs-6">  
+		      <?php if ($user_log=="SI"){ ?>
+		        <a href="carro.php?m=<?php $_GET['m'];?>&ca=raqueta&item=<?php echo $id_raqueta;?>" class="btn btn-success" style="float:right;">Añadir a la compra</a>
+		      <?php } 
+		      	if ($user_log=="NO"){ ?>
+		        <a href="http://www.elforodeltenis.com/register" class="btn btn-primary" style="float:right;">Reg&iacute;strate para poder comprar...</a>
+		      <?php } ?>
 		      </div>
 		    </div>
 		    </div>
@@ -158,7 +172,7 @@ include "footer.php"
         <img src="img/elforodeltenis.png">
       </div>
       <div class="modal-body">
-        <strong><?php echo $member_name;?></strong>, indícanos el la dirección de correo electrónico de tu amigo, y le enviaremos un email para que pueda ver y/o comprar esta raqueta.
+        <strong><?php echo $member_name;?></strong>, indícanos la dirección de correo electrónico de tu amigo, y le enviaremos un email para que pueda ver y/o comprar esta raqueta.
         <input type="text" name="email_friend" class="form-control space-up" placeholder="indica el email de tu amigo">
       </div>
       <div class="modal-footer">

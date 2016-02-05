@@ -29,10 +29,21 @@ include "slider-raquetas.php";
       <div class="caption">
         <h3>Blade 98S</h3>
         <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+        <table class="table table-bordered table-striped table-condensed">
+        	<tbody>
+        		<tr>
+        			<td>Precio General</td>
+        			<td>198€</td>
+        		</tr>
+        		<tr>
+        			<td>Precio forero</td>
+        			<td>190€</td>
+        		</tr>
+        	</tbody>
+        </table>
         <p>
-        	<a href="raqueta-tenis.php?m=<?php echo $_GET['m'];?>" class="btn btn-default" role="button">ver+</a>
-        	<a href="#" class="btn btn-success" role="button">198&euro;</a>
-        	<a href="#" class="btn btn-primary" role="button">Comprar</a>
+        	<a href="raqueta-tenis.php?m=<?php echo $_GET['m'];?>" class="btn btn-success" role="button">ver+</a>
+        	<span style="float:right;"><a href="#" class="btn btn-primary" role="button">Añadir al carro</a></span>
         </p>
       </div>
     </div>
