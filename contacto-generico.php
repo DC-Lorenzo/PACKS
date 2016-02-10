@@ -49,16 +49,14 @@ $mail->Send();
 
 <div style="display:block; float:left; width:100%; background-color:black;">
 	<div style="float:left;">
-		<a href="http://www.elforodeltenis.com/addons/banners/banner-events-scores.php">
-			<img src="http://www.elforodeltenis.com/addons/banners/img/foro-tenis-live-events.png" alt="Foro Tenis Live Events" title="Live Events. Elforodeltenis.com" width="320px">
-		</a>
-		<a href="https://livestream.com/ATP" target="_blank">
-			<img src="http://www.elforodeltenis.com/addons/banners/img/foro-atp-live.png" alt="Foro ATP Live" title="ATP Live. Elforodeltenis.com"  width="220px">
-		</a>
-		<a href="https://livestream.com/WTA" target="_blank">
-			<img src="http://www.elforodeltenis.com/addons/banners/img/tenis-wta-live.png" alt="Tenis WTA Live" title="WTA Live. Elforodeltenis.com"  width="220px">
-		</a>
-		<span style="margin-left:50px;"><a href="http://www.elforodeltenis.com" class="btn btn-primary">Volver al foro...</a></span>
+		
+	</div>	
+	<div style="float:left;">
+		
+	</div>
+	<div style="float:left;">	
+		
+		<span style="margin-left:50px;"></span>
 	</div>
 </div>
 
@@ -95,14 +93,33 @@ $mail->Send();
     <![endif]-->
   </head>
   <body>
+  	<div class="container-fluid">
+		<div class="row" style="background-color:#000000!important; padding-bottom:10px;">
+			<div class="col-md-3 col-xs-12" style="margin-top:5px;">
+				<a href="http://www.elforodeltenis.com/addons/banners/banner-events-scores.php">
+					<img src="http://www.elforodeltenis.com/addons/banners/img/foro-tenis-live-events.png" alt="Foro Tenis Live Events" title="Live Events. Elforodeltenis.com" width="320px">
+				</a>
+			</div>
+			<div class="col-md-2 col-xs-6"  style="margin-top:5px;">
+				<a href="https://livestream.com/ATP" target="_blank">
+					<img src="http://www.elforodeltenis.com/addons/banners/img/foro-atp-live.png" alt="Foro ATP Live" title="ATP Live. Elforodeltenis.com"  width="100%" max-width="220px"  style="max-width:220px;">
+				</a>
+			</div>
+			<div class="col-md-2 col-xs-6"  style="margin-top:5px;">
+				<a href="https://livestream.com/WTA" target="_blank">
+					<img src="http://www.elforodeltenis.com/addons/banners/img/tenis-wta-live.png" alt="Tenis WTA Live" title="WTA Live. Elforodeltenis.com"  width="100%"  max-width="220px" style="max-width:220px;">
+				</a>
+			</div>
+			<div class="col-md-5 col-xs-12"  style="margin-top:5px;">
+				<a href="http://www.elforodeltenis.com" class="btn btn-primary">Volver al foro...</a>
+			</div>
+		</div>  		
+  	</div>
     <div class="container">
-
 
 <div class="row space-up">
 	<div class="col-md-3 col-xs-12"><img src="http://www.elforodeltenis.com/Themes/BeCool_2/images/elforodeltenis.gif" alt="elforodeltenis.com" title="logo el foro del tenis" style="margin-top:50px;"></div>
-	<div class="col-md-2 col-xs-12"></div>
-	<div class="col-md-2 col-xs-12"></div>
-	<div class="col-md-5 col-xs-12"><div style="float:right;"><iframe width="350" frameborder="0" scrolling="NO" src="http://www.elforodeltenis.com/addons/slider_top1.php"></iframe></div></div>
+	<div class="col-md-9 col-xs-12"></div>
 </div>
 <div class="row space-up">
 	<div class="col-md-12">
