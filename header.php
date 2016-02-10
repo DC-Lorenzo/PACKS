@@ -15,13 +15,26 @@ if ($_GET['m']<>""){
 }
 if ($_GET['m']=="") { $user_log ="NO"; $member_name = "Visitante";}
 ?>
-<!DOCTYPE html>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html lang="en">
   <head>
+  <!--GOOGLE ANALYTICS-->
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-2907763-6', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="Venta de raquetas de tenis, zapatillas de tenis, ropa de tenis. Venta de segunda mano.">
     <title>el foro del tenis - packs</title>
 
     <!-- Bootstrap -->
