@@ -6761,3 +6761,16 @@ button.close {
 /*# sourceMappingURL=bootstrap.css.map */
 .small-text {font-size: 11px!important;}
 .space-up { margin-top: 10px;}
+
+
+/* para formulario*/
+/* # cambiar estilo a error
+============================================*/
+.controls > .error {
+    color: #b94a48;
+    display: inline-block;
+    *display: inline;
+    padding-left: 5px;
+    vertical-align: middle;
+    *zoom: 1;
+}
